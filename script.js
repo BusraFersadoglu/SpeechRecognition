@@ -25,7 +25,7 @@ recognition.onresult = function (event) {
   const color = event.results[0][0].transcript;
   
   bodyEl.style.backgroundColor = color.replace(" ", "");
-  messageEl.textContent = `You're color is: ${color}...`;
+  messageEl.textContent = `You're color is: ${color}`;
 };
 
 recognition.onspeechend = function (e) {
